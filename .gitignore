@@ -1,0 +1,10 @@
+# Git Ignore Files and Folders #
+
+# OS Generated File
+*.DS_Store
+
+# Env File 
+.env
+
+# Dependencies
+node_modules
