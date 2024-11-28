@@ -1,6 +1,6 @@
 // # User Model #
 
-// # Import Required Modules
+// # Import
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const createHttpError = require('http-errors');
