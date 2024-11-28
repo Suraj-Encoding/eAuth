@@ -9,4 +9,5 @@ router.get('/profile', async (req, res, next) => {
   res.render('profile', { person });
 });
 
+// # Export Router
 module.exports = router;
