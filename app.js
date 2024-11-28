@@ -38,7 +38,7 @@ app.use(
 // # For Passport JS Authentication
 app.use(passport.initialize());
 app.use(passport.session());
-require('./utils/passport.auth');
+require('./utils/passport');
 
 app.use((req, res, next) => {
   res.locals.user = req.user;
@@ -53,18 +53,18 @@ app.use((req, res, next) => {
 });
 
 // # Routes
-app.use('/', require('./routes/index.route'));
-app.use('/auth', require('./routes/auth.route'));
+app.use('/', require('./routes/index'));
+app.use('/auth', require('./routes/auth'));
 app.use(
   '/user',
   ensureLoggedIn({ redirectTo: '/auth/login' }),
-  require('./routes/user.route')
+  require('./routes/user')
 );
 app.use(
   '/admin',
   ensureLoggedIn({ redirectTo: '/auth/login' }),
   ensureAdmin,
-  require('./routes/admin.route')
+  require('./routes/admin')
 );
 
 // # 404 Handler
