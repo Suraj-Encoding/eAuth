@@ -78,7 +78,7 @@ app.use((req, res, next) => {
 app.use((error, req, res, next) => {
   error.status = error.status || 500;
   res.status(error.status);
-  res.render('error_40x', { error });
+  res.render('error', { error });
 });
 
 // # Setting the PORT
