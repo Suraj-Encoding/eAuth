@@ -5,7 +5,7 @@ const router = require('express').Router();
 
 // # Home Route -> / 
 router.get('/', (req, res, next) => {
-  res.render('index');
+  res.render('home');
 });
 
 // # Export Router
