@@ -21,7 +21,7 @@ router.get('/user/:id', async (req, res, next) => {
   try {
     const { id } = req.params;
     if (!mongoose.Types.ObjectId.isValid(id)) {
-      req.flash('error', '🚫 Invalid ID!');
+      req.flash('error', '⚠️ Invalid ID!');
       res.redirect('/admin/users');
       return;
     }
@@ -39,20 +39,20 @@ router.post('/update-role', async (req, res, next) => {
 
     // # Checking for id and roles in req.body
     if (!id || !role) {
-      req.flash('error', '🚫 Invalid Request!');
+      req.flash('error', '⚠️ Invalid Request!');
       return res.redirect('back');
     }
 
     // # Check for valid mongoose objectID
     if (!mongoose.Types.ObjectId.isValid(id)) {
-      req.flash('error', '🚫 Invalid ID!');
+      req.flash('error', '⚠️ Invalid ID!');
       return res.redirect('back');
     }
 
     // # Check for Valid role
     const rolesArray = Object.values(roles);
     if (!rolesArray.includes(role)) {
-      req.flash('error', '🚫 Invalid Role!');
+      req.flash('error', '⚠️ Invalid Role!');
       return res.redirect('back');
     }
 
@@ -60,7 +60,7 @@ router.post('/update-role', async (req, res, next) => {
     if (req.user.id === id) {
       req.flash(
         'error',
-        '🚫 Admins cannot remove themselves from Admin, ask another Admin.'
+        '⚠️ Admins cannot remove themselves from Admin, ask another Admin.'
       );
       return res.redirect('back');
     }
