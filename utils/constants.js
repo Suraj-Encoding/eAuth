@@ -3,8 +3,8 @@
 // # Roles
 module.exports = {
   roles: {
-    admin: 'ADMIN',
-    moderator: 'MODERATOR',
-    client: 'CLIENT'
+    admin: 'Admin',
+    moderator: 'Moderator',
+    client: 'Client'
   }
 };
