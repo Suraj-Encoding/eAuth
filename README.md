@@ -14,6 +14,15 @@ The application is based on the **`MVC pattern`** i.e. `Model` | `View` | `Contr
 
 The application is **`production ready`**.
 
+I have added complete process screenshots in `output` directory.
+
+`# Admin Login #`
+```
+Email: admin@gmail.com - Mandatory
+Password: Set according to you
+```
+
+
 ---
 
 ## To setting up the project follow the steps below...🚀
