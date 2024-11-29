@@ -10,7 +10,7 @@ const { roles } = require('../utils/constants');
 router.get('/users', async (req, res, next) => {
   try {
     const users = await User.find();
-    res.render('manage-users', { users });
+    res.render('admin', { users });
   } catch (error) {
     next(error);
   }
