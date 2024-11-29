@@ -1,4 +1,4 @@
-# 🚀 eAuth: A Robust Auth System 🚀
+# 🕸️ eAuth: A Robust Auth System 🕸️
 
 This is a `Role Based Access Control (RBAC)` application using Node.js, Express.js, and Passport.js, etc.
 
