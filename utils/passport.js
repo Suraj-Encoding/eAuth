@@ -18,7 +18,7 @@ passport.use(
         // # Email not found
         if (!user) {
           return done(null, false, {
-            message: '⚠️ Username/Email not registered!',
+            message: '⚠️ Email not registered!',
           });
         }
         // # Email exist and now we need to verify the password
