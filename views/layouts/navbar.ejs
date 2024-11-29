@@ -6,7 +6,7 @@
     <li><a href="/">Home</a></li>
     <% if (user) { %>
       <li><a href="/user/profile">Profile</a></li>
-      <% if (user.role==='ADMIN' ) { %>
+      <% if (user.role==='Admin' ) { %>
         <li><a href="/admin/users">Manage Users</a></li>
         <% } %>
           <li><a href="/auth/logout">Logout</a></li>
