@@ -87,11 +87,7 @@ const PORT = process.env.PORT || 3000;
 // # Making MongoDB Connection
 mongoose
   .connect(process.env.MONGODB_URI, {
-    dbName: process.env.DB_NAME,
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-    useFindAndModify: false
+    dbName: process.env.DB_NAME
   })
   .then(() => {
     console.log('🚀 ' + 'eAuth Server Connected...🎉');
